@@ -399,6 +399,11 @@ controls{
       keyboardKey:i=45
     }
 
+    ID_TOGGLE_PERIODIC_FLARES{
+      keyboardKey:i=56
+      keyboardKey:i=19
+    }
+
     ID_TOGGLE_VIEW{
       keyboardKey:i=65
     }
