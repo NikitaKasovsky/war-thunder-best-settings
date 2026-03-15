@@ -18,6 +18,10 @@ controls{
       keyboardKey:i=58
     }
 
+    ID_AGM_LOCK_HELICOPTER{
+      keyboardKey:i=58
+    }
+
     ID_AIR_BRAKE{
       keyboardKey:i=46
     }
@@ -62,6 +66,10 @@ controls{
       keyboardKey:i=62
     }
 
+    ID_CAMERA_FPS_HELICOPTER{
+      keyboardKey:i=62
+    }
+
     ID_CAMERA_NEUTRAL{
       mouseButton:i=1
     }
@@ -70,11 +78,20 @@ controls{
       keyboardKey:i=60
     }
 
+    ID_CAMERA_OPTICS_HELICOPTER{
+      keyboardKey:i=60
+    }
+
     ID_CAMERA_SEEKER{
       keyboardKey:i=63
     }
 
+    ID_CAMERA_SEEKER_HELICOPTER{
+      keyboardKey:i=63
+    }
+
     ID_CAMERA_VIRTUAL_FPS{}
+    ID_CAMERA_VIRTUAL_FPS_HELICOPTER{}
     ID_CHUTE{
       keyboardKey:i=199
     }
@@ -91,12 +108,16 @@ controls{
       mouseButton:i=3
     }
 
-    ID_DESIGNATE_TARGET{
-      keyboardKey:i=45
+    ID_COUNTERMEASURE_CHAFF_HELICOPTER{
+      mouseButton:i=3
     }
 
-    ID_EXIT_SHOOTING_CYCLE_MODE_HELICOPTER{
+    ID_COUNTERMEASURE_FLARES_HELICOPTER{
       mouseButton:i=4
+    }
+
+    ID_DESIGNATE_TARGET{
+      keyboardKey:i=45
     }
 
     ID_FIRE_ADDITIONAL_GUNS{
@@ -144,6 +165,11 @@ controls{
     }
 
     ID_GUIDED_BOMBS_LOCK{}
+    ID_HELI_GUNNER_NIGHT_VISION{
+      keyboardKey:i=56
+      keyboardKey:i=46
+    }
+
     ID_HIDE_HUD{}
     ID_HIDE_HUD{
       keyboardKey:i=27
@@ -166,12 +192,22 @@ controls{
       keyboardKey:i=57
     }
 
+    ID_JETTISON_SECONDARY_HELICOPTER{
+      keyboardKey:i=42
+      keyboardKey:i=57
+    }
+
     ID_LOCK_TARGET{
       mouseButton:i=2
     }
 
     ID_LOCK_TARGETING_AT_POINT{
       keyboardKey:i=47
+    }
+
+    ID_LOCK_TARGETING_AT_POINT_HELICOPTER{
+      keyboardKey:i=56
+      mouseButton:i=0
     }
 
     ID_MPSTATSCREEN{
@@ -264,6 +300,7 @@ controls{
       keyboardKey:i=2
     }
 
+    ID_SENSOR_SWITCH_HELICOPTER{}
     ID_SENSOR_SWITCH_TANK{
       keyboardKey:i=46
     }
@@ -340,6 +377,7 @@ controls{
     }
 
     ID_SWITCH_SHOOTING_CYCLE_PRIMARY_HELICOPTER{
+      keyboardKey:i=56
       mouseButton:i=4
     }
 
@@ -349,6 +387,7 @@ controls{
     }
 
     ID_SWITCH_SHOOTING_CYCLE_SECONDARY_HELICOPTER{
+      keyboardKey:i=56
       mouseButton:i=3
     }
 
@@ -369,6 +408,10 @@ controls{
 
     ID_TOGGLE_CANNONS_AND_ROCKETS_BALLISTIC_COMPUTER{
       keyboardKey:i=200
+    }
+
+    ID_TOGGLE_CANNONS_AND_ROCKETS_BALLISTIC_COMPUTER_HELICOPTER{
+      keyboardKey:i=201
     }
 
     ID_TOGGLE_CHAT_MODE{}
@@ -399,12 +442,26 @@ controls{
       keyboardKey:i=45
     }
 
+    ID_TOGGLE_LASER_DESIGNATOR_HELICOPTER{
+      keyboardKey:i=56
+      keyboardKey:i=45
+    }
+
     ID_TOGGLE_PERIODIC_FLARES{
       keyboardKey:i=56
       keyboardKey:i=19
     }
 
+    ID_TOGGLE_PERIODIC_FLARES_HELICOPTER{
+      keyboardKey:i=56
+      keyboardKey:i=19
+    }
+
     ID_TOGGLE_VIEW{
+      keyboardKey:i=65
+    }
+
+    ID_TOGGLE_VIEW_HELICOPTER{
       keyboardKey:i=65
     }
 
@@ -417,8 +474,17 @@ controls{
       keyboardKey:i=47
     }
 
+    ID_UNLOCK_TARGETING_AT_POINT_HELICOPTER{
+      keyboardKey:i=56
+      mouseButton:i=1
+    }
+
     ID_WEAPON_LEAD_TANK{}
     ID_WEAPON_LOCK{
+      keyboardKey:i=58
+    }
+
+    ID_WEAPON_LOCK_HELICOPTER{
       keyboardKey:i=58
     }
 
@@ -479,11 +545,11 @@ controls{
     }
 
     helicopter_climb_rangeMax{
-      mouseButton:i=5
+      keyboardKey:i=42
     }
 
     helicopter_climb_rangeMin{
-      mouseButton:i=6
+      keyboardKey:i=29
     }
 
     helicopter_collective_rangeMax{
@@ -492,6 +558,11 @@ controls{
 
     helicopter_collective_rangeMin{
       keyboardKey:i=29
+    }
+
+    helicopter_collective_rangeSet{
+      keyboardKey:i=29
+      keyboardKey:i=56
     }
 
     helicopter_cyclic_pitch_rangeMax{
@@ -530,6 +601,21 @@ controls{
     sensor_cue_z_rangeSet{
       keyboardKey:i=56
       keyboardKey:i=3
+    }
+
+    ship_sight_distance_rangeMax{
+      keyboardKey:i=56
+      keyboardKey:i=18
+    }
+
+    ship_sight_distance_rangeMin{
+      keyboardKey:i=56
+      keyboardKey:i=16
+    }
+
+    ship_sight_distance_rangeSet{
+      keyboardKey:i=56
+      keyboardKey:i=45
     }
 
     throttle_rangeMax{
@@ -591,19 +677,31 @@ controls{
     }
 
     helicopter_climb{
-      relSens:r=0.81
+      relative:b=no
+      keepDisabledValue:b=yes
     }
 
     helicopter_collective{
-      relSens:r=0.81
+      mouseAxisId:i=-1
+      kMul:r=0.8
+      relative:b=no
+      keepDisabledValue:b=yes
     }
 
     helicopter_cyclic_pitch{
       relSens:r=0.64
     }
 
+    helicopter_zoom{
+      mouseAxisId:i=6
+    }
+
     sensor_cue_x{
       kMul:r=1.65
+    }
+
+    ship_sight_distance{
+      relSens:r=0.36
     }
 
     throttle{
@@ -701,14 +799,16 @@ settings{
   aimTimeNonlinearityWalker:r=0
   aimTimeNonlinearityShip:r=0
   aimTimeNonlinearitySubmarine:r=0
+  aimTimeNonlinearityHuman:r=0
   aimAccelerationDelayAir:r=0.5
   aimAccelerationDelayHelicopter:r=0.5
   aimAccelerationDelayTank:r=0.5
   aimAccelerationDelayWalker:r=0.5
   aimAccelerationDelayShip:r=0.5
   aimAccelerationDelaySubmarine:r=0.5
+  aimAccelerationDelayHuman:r=0.5
   mouseZMultAir:r=1
-  mouseZMultHelicopter:r=0.5
+  mouseZMultHelicopter:r=1
   mouseZMultTank:r=1
   mouseZMultShip:r=0.5
   mouseZMultSubmarine:r=0.5
@@ -737,4 +837,5 @@ settings{
   forceGain:r=1
   cameraShakeMultiplier:r=0.74
   vrCameraShakeMultiplier:r=1
+  holdBtnToGrabHotas:b=no
 }
